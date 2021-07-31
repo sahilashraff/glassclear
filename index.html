@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Glass Clear Project</title>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="content">
+        <div class="circle1"></div>
+        <h3>Sahil Ashraf</h3>
+        <p>Ui/UX Designer</p>
+        <p>Web Developer</p>
+        <p>&male; Brother &amp; Husband </p>
+        <a href="#">Thank You</a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="content">
+        <div class="circle2"></div>
+        <h3>Aasiyah Ashraf</h3>
+        <p>Senior Customer Care Representaive</p>
+        <p>&female; Sister of Sahil</p>
+        <a href="#">Thank You</a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="content">
+        <div class="circle3"></div>
+        <h3>Khusboo Nisha</h3>
+        <p>Customer Care Representaive</p>
+        <p>&female; Wife of Sahil </p>
+        <a href="#">Thank You</a>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="vanilla-tilt.js"></script>
+  <script>
+    VanillaTilt.init(document.querySelectorAll(".card"), {
+      speed: 400,
+      max: 35,
+      glare: true,
+      "max-glare": 1,
+    });
+  </script>
+</body>
+</html>

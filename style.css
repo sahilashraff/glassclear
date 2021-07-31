@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #fff;
+}
+
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#f00, #f0f);
+  clip-path: circle(30% at right 70%);
+}
+
+body::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#ff512f, #dd2476);
+  clip-path: circle(20% at 10% 10%);
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.container .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 280px;
+  height: 400px;
+  margin: 30px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  overflow: hidden;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+  z-index: 1;
+}
+
+.container .card .content {
+  padding: 10px;
+  text-align: center;
+  transition: 0.5s;
+  transform: translateY(100px);
+  opacity: 0;
+}
+
+.container .card:hover .content {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.container .card .content h3 {
+  font-size: 1.8em;
+  font-weight: 300;
+  color: #000;
+  z-index: 1;
+}
+
+.container .card .content p {
+  font-size: 1em;
+  color: #000;
+  font-weight: 300;
+}
+
+.container .card .content a {
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  padding: 8px 20px;
+  margin-top: 15px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 20px;
+  font-weight: 500;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+
+.container .card .content .circle1, .circle2, .circle3 {
+  display: flex;
+  margin: 15px auto;
+  height: 150px;
+  width: 150px;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.circle1 {
+  background-image: url(./img/hero-img.jpg);
+}
+
+.circle2 {
+  background-image: url(./img/hero-img-2.jpeg);
+}
+
+.circle3 {
+  background-image: url(./img/hero-img-3.jpg);
+}
